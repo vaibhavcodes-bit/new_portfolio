@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/images/VP logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav &mdash;&mdash; Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vaibhav Pcodes </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	</nav>
+
+  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Vaibhav Pandey</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Devloper  ',
+						'Fullstack Devloper  ',
+						'AI Engineer   ',
+						'Technical Writer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Software Devloper</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+							<a href="#project-section" class="btn btn-primary py-3 px-4">My Porjects</a> 
+							<a href="https://github.com/dashboard" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+						
+						</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+  </section>
+
+  <section id="about-section" style="padding:80px 0; background:#000;">
+  <div style="max-width:1200px;margin:auto;padding:0 20px;">
+    <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;">
+
+      <!-- LEFT PROFILE CARD -->
+      <div style="flex:1;min-width:280px;">
+        <div style="background:linear-gradient(145deg,#0b0b0b,#141414);padding:30px;border-radius:22px;border:1px solid rgba(255,189,57,0.3);box-shadow:0 0 30px rgba(255,189,57,0.15);">
+
+          <!-- IMAGE -->
+          <div style="text-align:center;">
+            <img src="images/HeroImage.png" 
+                 style="width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid #ffbd39;box-shadow:0 0 25px rgba(255,189,57,0.6);">
+          </div>
+
+          <!-- BASIC INFO -->
+          <div style="margin-top:20px;text-align:center;">
+            <h3 style="margin-bottom:6px;color:#ffbd39;">Vaibhav Pandey</h3>
+            <p style="opacity:.8;color:#ffffff;">Software Developer</p>
+          </div>
+
+          <!-- SKILLS -->
+          <div style="margin-top:30px;background:#0e0e0e;padding:22px;border-radius:18px;border:1px solid rgba(255,189,57,0.25);">
+            <p style="color:#ffbd39;font-weight:800;letter-spacing:2px;border-left:5px solid #ffbd39;padding-left:12px;margin-bottom:16px;">
+              Skills
+            </p>
+
+           <div style="display:flex;flex-wrap:wrap;gap:10px;">
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">JavaScript</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Node.js</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Express.js</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">REST APIs</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">MongoDB</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">PostgreSQL</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">MySQL</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Git</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Postman</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">ChatGPT</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Google Gemini</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">GitHub Copilot</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Canva AI</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Perplexity AI</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">SQL</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Python</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Sequelize</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Mongoose</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">JSON</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Agile</span>
+
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">DITA/XML</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Adobe FrameMaker</span>
+  <span style="padding:7px 14px;font-size:12px;font-weight:700;color:#ffffff;border:1px solid rgba(255,189,57,0.6);border-radius:20px;">Oxygen XML</span>
+
+		   </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT ABOUT CONTENT -->
+      <div style="flex:1.4;min-width:300px;">
+        <div>
+          <h1 style="font-size:48px;opacity:0.07;position:absolute;color:#ffbd39;">ABOUT</h1>
+          <h2 style="font-size:34px;margin-bottom:18px;color:#ffffff;">About Me</h2>
+
+          <p style="line-height:1.8;opacity:0.8;margin-bottom:22px;color:#ffffff;">
+           Results-driven Software Developer with 2+ years of experience in Full-Stack Development and 2+ years
+ 		   in Technical Writing. Specialized in JavaScript, React.js, Node.js, and Python, with hands-on expertise in
+ 		   MongoDB, MySQL, Sequelize, and Mongoose.
+ 		   Adept at building scalable RESTful APIs, creating responsive frontends, and authoring DITA/XML
+ 		   documentation using Oxygen XML Author and Adobe FrameMaker. Recognized for bridging the gap
+ 		   between technical and non-technical teams, contributing to projects selected for Techstars Boston 2024
+          </p>
+
+          <ul style="list-style:none;padding:0;line-height:2;color:#ffffff;">
+            <li><b style="color:#ffbd39;">Frontend:</b> HTML5, CSS3, JavaScript (ES6+), React, Reactnative, Typescript,Next.js.</li>
+            <li><b style="color:#ffbd39;">Backend:</b> Node.js, Express.js, REST APIs, Sequelize, Mongoose.</li>
+            <li><b style="color:#ffbd39;">Database:</b> MongoDB, MySQL, PostgreSQL.</li>
+            <li><b style="color:#ffbd39;">AI Tools::</b> ChatGPT, Google Gemini, GitHub Copilot, Canva AI, Perplexity AI.</li>
+            <li><b style="color:#ffbd39;">Documentation:</b>  DITA/XML, Adobe FrameMaker, Oxygen XML</li>
+            <li><b style="color:#ffbd39;">Other:</b> Git, Agile, JSON, Postman </li>
+          </ul>
+
+          <!-- PROJECT COUNT -->
+          <!-- <div style="margin-top:30px;">
+            <p style="font-size:26px;color:#ffffff;">
+              <span style="color:#ffbd39;font-weight:800;">30+</span> Projects Completed
+            </p> -->
+
+            <a href="https://www.linkedin.com/in/vaibhav-pandey-66b76a19b/" 
+               style="display:inline-block;margin-top:16px;padding:12px 28px;border-radius:30px;background:#ffbd39;color:#000;font-weight:700;text-decoration:none;box-shadow:0 0 18px rgba(255,189,57,.6);">
+               LinkedIn Profile
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <section class="ftco-section" id="project-section">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-8 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>
+          These are my top Computer Science focused projects that demonstrate strong fundamentals in
+          Full-Stack Development, Backend Engineering, APIs, Databases, and System Design.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="row d-flex">
+
+      <!-- PROJECT 1 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#"><b style="color:#ff9800;">Comming Soon-</b>Job Portal (AI)</a>
+            </h3>
+            <p>
+              Built a complete job portal using React, Node.js, Express, MongoDB, and JWT authentication.
+              Implemented AI-based resume screening, role-based access control, REST APIs, and secure login.
+            </p>
+            <p><b>CS Impact:</b> API Design, Authentication, Databases, System Architecture, Security.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://ecommerce-silk-mu.vercel.app/auth/register" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="https://ecommerce-silk-mu.vercel.app/auth/register">E-Commerce Platform</a>
+            </h3>
+            <p>
+              Developed a scalable e-commerce system with product management, user authentication, cart,
+              payment flow, and using MERN stack.
+            </p>
+            <p><b>CS Impact:</b> Scalable Backend, Data Structures, REST APIs, Payment Integration, Optimization.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#"><b style="color:#ff9800;">Comming Soon-</b> Image Generation & Processing Tool</a>
+            </h3>
+            <p>
+              Created an image generation and optimization tool with API-based processing, AWS S3 storage,
+              WebP conversion, and frontend dashboard for file management.
+            </p>
+            <p><b>CS Impact:</b> Cloud Computing, File Systems, Image Processing, API Optimization.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+	
+  <section class="ftco-section ftco-no-pb" id="resume-section">
+
+  <!-- ✅ EQUAL HEIGHT CARD CSS (FOR BOTH SECTIONS) -->
+  <style>
+    #resume-section .exp-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #resume-section .exp-col {
+      display: flex;
+    }
+
+    #resume-section .resume-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #resume-section .resume-wrap ul,
+    #resume-section .resume-wrap p {
+      margin-top: auto;
+    }
+  </style>
+
+  <div class="container">
+    
+    <!-- Heading -->
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Resume</h1>
+        <h2 class="mb-4">Resume</h2>
+        <p>
+          Results-driven Software Developer with 2+ years of experience in Full-Stack Development    and 2+ years in Technical Writing. Specialized in JavaScript, React.js, Node.js, and Python, with hands-on expertise in MongoDB, MySQL, Sequelize, and Mongoose. Adept at building scalable RESTful APIs, creating responsive frontends, and authoring DITA/XML documentation using Oxygen XML Author and Adobe FrameMaker. Recognized for bridging the gap between technical and non-technical teams, contributing to projects selected for Techstars Boston 2024
+        </p>
+      </div>
+    </div>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <div class="row">
+      <h1 class="big-4">Experience</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+
+    <div class="row exp-row">
+
+      <div class="col-md-4 exp-col">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2024-Present</span>
+          <h2>Software Developer</h2>
+          <span class="position">UniTop Education</span>
+          <ul class="mt-4">
+            <li>Built and deployed responsive React.js interfaces, improving user engagement and navigation speed.</li>
+            <li>Designed and implemented RESTful APIs enabling seamless communication between frontend and
+ backend systems</li>
+            <li>Authored API and workflow documentation, improving onboarding speed for new developers by 25%</li>
+            <li>Contributed to the TruLeague platform, selected for Techstars Boston Fall 2024, validating product innovation and scalability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 exp-col">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2021-2023</span>
+          <h2>Technical Writer & Develpoer</h2>
+          <span class="position">Mphasis</span>
+          <ul class="mt-4">
+            <b>Handled clients HP & Kore.ai.</b>
+            <li>Authored and edited comprehensive hardware/software documentation for HP printers using DITA XML.</li>
+            <li>Collaborated with engineering and QA teams to ensure documentation accuracy and compliance.</li>
+            <li>Reduced end-user troubleshooting queries by 20% through clear instructional content</li>
+            <li>Created user guides and chatbot configuration documentation, improving clarity and user adoption.
+</li>
+            <li>Developed custom chatbot features using JavaScript and Node.js, enhancing automation by 40%</li>
+            <li>Partnered with cross-functional teams for content reviews and version control in Agile sprints.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 exp-col">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2020-2021</span>
+          <h2>Technical Writer</h2>
+          <span class="position">RADTEL</span>
+          <ul class="mt-4">
+            <li> Developed technical documentation and UX content using DITA and CMS platforms, improving web usability metrics.</li>
+            <li>Led UX-content collaboration to align documentation with brand and accessibility standards.</li>
+            <li>Monitored and enhanced online content strategy, boosting engagement by 15%.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- ================= EDUCATION (NOW ALSO EQUAL HEIGHT) ================= -->
+    <div class="row">
+      <h1 class="big-4">Education</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+
+    <!-- ✅ ADDED exp-row + exp-col HERE -->
+    <div class="row exp-row">
+
+      <div class="col-md-6 exp-col">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2018-2020</span>
+          <h2>Master of Mass Communication</h2>
+          <span class="position">Kushabhau Thakre University of Journalism & Mass
+ Communication</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 exp-col">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2015-2018</span>
+          <h2>BAJMC</h2>
+          <span class="position">St. Thomas College</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= DOWNLOAD CV ================= -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 text-center ftco-animate">
+      <p>
+      <button class="btn btn-primary py-4 px-5" onclick="downloadCV()">
+      Download CV
+      </button>
+      </p>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb" id="section-counter">
+  <div class="container">
+
+    <!-- ✅ REPLACEMENT DESIGN BLOCK (INSTEAD OF COUNTERS) -->
+    <div class="row text-center justify-content-center mb-5">
+
+      <div class="col-md-4 ftco-animate">
+        <div class="block-18 p-4 shadow rounded">
+          <h3>Backend Expertise</h3>
+          <p>
+            Specialized in Node.js, Express, REST APIs, JWT authentication,
+            database design, and secure backend systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate">
+        <div class="block-18 p-4 shadow rounded">
+          <h3>Frontend Engineering</h3>
+          <p>
+            Experienced in building responsive UIs using React.js,
+            Tailwind, Chakra UI, and modern component-based design.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate">
+        <div class="block-18 p-4 shadow rounded">
+          <h3>Cloud & Deployment</h3>
+          <p>
+            Hands-on with AWS S3, Vercel deployment, server hosting,
+            image optimization, and backend performance tuning.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✅ GITHUB CTA SECTION (UNCHANGED BUT CLEANED) -->
+  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+    <div class="row justify-content-center">
+      <div class="col-md-8 ftco-animate text-center">
+        <h2>More Projects on <span>GitHub</span></h2>
+        <div class="heading">
+          <h4>
+            I love solving real-world problems with clean, scalable,
+            and production-ready systems.
+          </h4>
+          <br>
+          <p>
+            <a href="https://github.com/dashboard" class="btn btn-primary py-3 px-5">
+              Visit GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    
+    <!-- Heading -->
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Feel free to reach out for projects, collaboration, or job opportunities.</p>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="row d-flex contact-info mb-5">
+
+      <!-- Address -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Location</h3>
+          <p>Bengaluru, India</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p>
+            <a href="tel:+919999999999">+91 91316 83087</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p>
+            <a href="mailto:pandeyvaibhav459@gmail.com">pandeyvaibhav459@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Resume -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-globe"></span>
+          </div>
+          <h3 class="mb-4">Download Resume</h3>
+          <p>
+            <a href="assets/Jeetu_Pandey_Resume.pdf" target="_blank">Download CV</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Question Button -->
+    <div class="container">
+      <br><br>
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>
+            Have a <span>Question?</span>
+            <a href="https://forms.gle/your-google-form-link" class="btn btn-primary py-3 px-5">
+              Click Here
+            </a>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <br>
+      <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+        <li class="ftco-animate normal-txt">Find me on</li>
+
+        <li class="ftco-animate">
+          <a href="https://github.com/dashboard" target="_blank">
+            <span class="icon-github"></span>
+          </a>
+        </li>
+
+        <li class="ftco-animate">
+          <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">
+            <span class="icon-linkedin"></span>
+          </a>
+        </li>
+
+        <li class="ftco-animate">
+          <a href="https://twitter.com/your-twitter-id" target="_blank">
+            <span class="icon-twitter"></span>
+          </a>
+        </li>
+
+        <li class="ftco-animate">
+          <a href="https://www.instagram.com/your-instagram-id" target="_blank">
+            <span class="icon-instagram"></span>
+          </a>
+        </li>
+      </ul>
+
+      <br>
+    </div>
+
+  </div>
+  </section>
+
+ 
+  <footer class="ftco-footer ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p>
+          © <script>document.write(new Date().getFullYear());</script> 
+          Vaibhav Pandey | Full-Stack Developer & Technical Writer  
+          <br>
+          Built with ❤️ using HTML, CSS, JavaScript & Node.js  
+          <br><br>
+
+          <a href="https://github.com/dashboard" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a> |
+          <a href="mailto:pandeyvaibhav459@gmail.com">pandeyvaibhav459@gmail.com</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
