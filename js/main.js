@@ -1,8 +1,8 @@
   
  function downloadCV() {
     const link = document.createElement("a");
-    link.href = "Public/Vaibhav Pandey.pdf";   // Must be inside PUBLIC folder
-    link.download = "Vaibhav Pandey Resume.pdf";
+    link.href = "Public/Vaibhav_Pandey_Resume.pdf";   // Must be inside PUBLIC folder
+    link.download = "Vaibhav_Pandey_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
